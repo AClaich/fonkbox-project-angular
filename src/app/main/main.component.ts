@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  public mainImageUrl: string = '../assets/FONKBOXLOGO.png';
+
   constructor() { }
 
   ngOnInit(): void {
