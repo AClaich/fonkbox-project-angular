@@ -28,7 +28,7 @@ body {
 .demo-img {
   /* Photo by David Marcu on Unsplash */
   border: solid white 15px;
-  background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1953&q=80");
+  background-image: url("../../assets/FONKBOXLOGO.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -45,7 +45,7 @@ body {
   width: 25em;
   padding: 10em 0;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255,237,0,255);
   transition: opacity 0.4s;
 }
 
