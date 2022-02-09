@@ -11,6 +11,8 @@ import { registerLocaleData } from '@angular/common';
 import fr from '@angular/common/locales/fr';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzCardModule } from 'ng-zorro-antd/card';
 
 registerLocaleData(fr);
 
@@ -24,7 +26,9 @@ registerLocaleData(fr);
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NzGridModule,
+    NzCardModule
   ],
   providers: [{ provide: NZ_I18N, useValue: fr_FR }],
   bootstrap: [AppComponent]

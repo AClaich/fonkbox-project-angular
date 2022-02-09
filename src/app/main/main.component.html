@@ -1,9 +1,17 @@
-<div>
-  <div>
-    <div>
-      <div>
-        
-      </div>
+<div id="container">
+
+  <div id="main-content">
+    <nz-card>
+      <img id="logo-img" src="../assets/FONKBOXLOGO.png">
+    </nz-card>
+  </div>
+
+  <div nz-row id="carousel-container">
+    <div nz-col [nzSpan]="member.cardSize" *ngFor="let member of staffMember" [id]="'member-' + member.id">
+      <nz-card (mouseover)="overCard(member)">
+        <p>Member n°{{member.id}}</p>
+      </nz-card>
     </div>
   </div>
+
 </div>
