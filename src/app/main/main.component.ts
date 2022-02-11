@@ -133,7 +133,7 @@ export class MainComponent implements OnInit {
       lastName: "D'Artigues",
       pseudo: "",
       details: "Some guy",
-      imgPath: "",
+      imgPath: "../../assets/273264071_464028345221032_8757940528479569346_n.jpg",
       isOpen: false
     }
   ];
