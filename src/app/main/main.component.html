@@ -1,17 +1,51 @@
 <div id="container">
 
   <div id="main-content">
-    <nz-card>
-      <img id="logo-img" src="../assets/FONKBOXLOGO.png">
+    <nz-card id="main-card"
+    (mouseover)="growContent()"
+    (mouseout)="reduceContent()">
+      <div nz-row>
+        <div nz-col nzSpan="8" id="title-container">
+          <h1>BIENVENUE</h1>
+          <p id="text-title" [@hideTextTitle]="getStaffMember ? 'hide' : 'reveal'">Dans Fonkbox on va te parler de funk mais surtout de musique.
+            Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
+            Chaque semaine aura sa propre particularité. Italo disco, funk africain, calypso....et tant d'autres découvertes.
+            Ne t'inquiètes pas c'est normal...c'est la puissance de la FONK.
+            A très vite sur les ondes
+            Bisous</p>
+        </div>
+        <div nz-col nzSpan="8">
+          <img id="logo-img" src="../assets/FONKBOXLOGO.png"
+          [@getMainContent]="getStaffMember ? 'closed' : 'open'">
+        </div>
+        <div nz-col nzSpan="8" id="media-bouton-container" >
+          <button
+           nz-button [nzSize]="'large'" nzType="default" nzShape="round"
+           class="button-media"
+           [@hideTextButtonMedia]="getStaffMember ? 'hide' : 'reveal'"><i nz-icon nzType="twitter" nzTheme="outline"></i>Twitter</button>
+          <br />
+          <button
+           nz-button [nzSize]="'large'" nzType="default" nzShape="round"
+           class="button-media"
+           [@hideTextButtonMedia]="getStaffMember ? 'hide' : 'reveal'"><i nz-icon nzType="instagram" nzTheme="outline"></i></button>
+        </div>
+      </div>
     </nz-card>
   </div>
 
   <div nz-row id="carousel-container">
-    <div nz-col [nzSpan]="member.cardSize" *ngFor="let member of staffMember" [id]="'member-' + member.id">
-      <nz-card (mouseover)="overCard(member)">
-        <p>Member n°{{member.id}}</p>
-      </nz-card>
-    </div>
+    <nz-card *ngFor="let member of staffMember"
+      [id]="'member-' + member.id"
+      class="card-member"
+      [@getCarousel]="getStaffMember ? 'open' : 'closed'"
+      [@openCloseCard]="member.isOpen ? 'open' : 'closed'"
+      (mouseover)="open(member.id)"
+      (mouseout)="close(member.id)"
+      [ngStyle]="{'margin-left.%': (member.id * 25), 'width.%': 25}">
+      <h1>{{member.firstName}} {{member.lastName}}</h1>
+      <h3 *ngIf="member.pseudo">{{member.pseudo}}</h3>
+      <p>{{member.details}}</p>
+    </nz-card>
   </div>
 
 </div>

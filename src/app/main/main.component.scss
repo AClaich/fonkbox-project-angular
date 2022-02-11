@@ -1,9 +1,42 @@
 $yellow: #ffed00;
 
+#container {
+  max-height: 100%;
+  max-width: 100%
+}
+
+h1{
+  margin-top: 10%;
+}
+
 #logo-img{
-  width: fit-content;
+  width: 95.6%;
 }
 
 div#main-content{
-  width: 250px;
+  text-align: center;
+  background-color: $yellow;
+}
+
+#text-title{
+  margin-top: 10%;
+  text-align: justify;
+}
+
+#main-card {
+  border: none;
+  background-color: $yellow;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card-member {
+  position: absolute;
+  height: 35%;
+}
+
+.button-media{
+  margin-top: 28%;
+  background-color: $yellow;
+  border-color: black;
 }
