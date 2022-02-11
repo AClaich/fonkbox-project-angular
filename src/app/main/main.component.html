@@ -53,7 +53,7 @@
       (mouseout)="close(member.id)"
       [ngStyle]="{'margin-left.%': (member.id * 25), 'width.%': 25, 'background-image': 'url(' + member.imgPath + ')'}">
       <h1 class="name-member">{{member.firstName}} {{member.lastName}}</h1>
-      <i *ngIf="member.pseudo" class="pseudo-member">{{member.pseudo}}</i>
+      <p class="pseudo-member"><i *ngIf="member.pseudo">{{member.pseudo}}</i></p>
       <p class="details-member">{{member.details}}</p>
     </nz-card>
   </div>

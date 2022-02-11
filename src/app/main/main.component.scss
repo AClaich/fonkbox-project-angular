@@ -36,6 +36,7 @@ div#main-content{
   height: 35%;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center
 }
 
 .ant-card-bordered{
@@ -49,11 +50,13 @@ div#main-content{
 }
 
 h1.name-member{
+  display: inline;
   text-align: center;
   color: #f1f1f1
 }
 
-i.pseudo-member {
+p.pseudo-member {
+  display:inline;
   text-align: center;
   color: #f1f1f1
 }
@@ -61,5 +64,4 @@ i.pseudo-member {
 p.details-member{
   color: #f1f1f1;
   text-align: justify;
-  margin-top: 50%;
 }
