@@ -6,7 +6,7 @@
     (mouseout)="reduceContent()">
       <div nz-row>
         <div nz-col nzSpan="8" id="title-container">
-          <h1>BIENVENUE</h1>
+          <h1 [@hideTitle]="getStaffMember ? 'hide' : 'reveal'">BIENVENUE</h1>
           <p id="text-title" [@hideTextTitle]="getStaffMember ? 'hide' : 'reveal'">Dans Fonkbox on va te parler de funk mais surtout de musique.
             Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
             Chaque semaine aura sa propre particularité. Italo disco, funk africain, calypso....et tant d'autres découvertes.
@@ -19,15 +19,25 @@
           [@getMainContent]="getStaffMember ? 'closed' : 'open'">
         </div>
         <div nz-col nzSpan="8" id="media-bouton-container" >
-          <button
+          <a
            nz-button [nzSize]="'large'" nzType="default" nzShape="round"
            class="button-media"
-           [@hideTextButtonMedia]="getStaffMember ? 'hide' : 'reveal'"><i nz-icon nzType="twitter" nzTheme="outline"></i>Twitter</button>
+           href="https://www.twitter.com/fonkbox"
+           target="blank"
+           [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
+            <i nz-icon nzType="twitter" nzTheme="outline"></i>
+            <span>Twitter</span>
+          </a>
           <br />
-          <button
+          <a
            nz-button [nzSize]="'large'" nzType="default" nzShape="round"
            class="button-media"
-           [@hideTextButtonMedia]="getStaffMember ? 'hide' : 'reveal'"><i nz-icon nzType="instagram" nzTheme="outline"></i></button>
+           href="https://www.instagram.com/fonkbox"
+           target="blank"
+           [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
+            <i nz-icon nzType="instagram" nzTheme="outline"></i>
+            <span>Instagram</span>
+          </a>
         </div>
       </div>
     </nz-card>
@@ -41,7 +51,7 @@
       [@openCloseCard]="member.isOpen ? 'open' : 'closed'"
       (mouseover)="open(member.id)"
       (mouseout)="close(member.id)"
-      [ngStyle]="{'margin-left.%': (member.id * 25), 'width.%': 25}">
+      [ngStyle]="{'margin-left.%': (member.id * 25), 'width.%': 25, 'background-image': 'url(' + member.imgPath + ')'}">
       <h1>{{member.firstName}} {{member.lastName}}</h1>
       <h3 *ngIf="member.pseudo">{{member.pseudo}}</h3>
       <p>{{member.details}}</p>

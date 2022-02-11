@@ -1,6 +1,5 @@
-import { animate, query, state, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { NzGridModule } from 'ng-zorro-antd/grid';
 
 class Staff {
   public id: number;
@@ -60,23 +59,31 @@ class Staff {
         animate('0.5s')
       ])
     ]),
+    trigger('hideTitle', [
+      state('hide', style({
+        opacity: 0.5,
+        marginTop: '20%'
+      })),
+      transition('hide <=> *', [
+        animate('0.5s')
+      ])
+    ]),
     trigger('hideTextTitle', [
       state('hide', style({
+        marginTop: "auto",
+        marginBottom: "auto",
         color: "#ffed00"
       })),
       transition('hide <=> *', [
         animate('0.5s')
       ])
     ]),
-    trigger('hideTextButtonMedia', [
+    trigger('hideButtonMedia', [
       state('hide', style({
         marginTop: "12%",
         opacity: 0.5
       })),
-      state('reveal', style({
-        color: "#000000"
-      })),
-      transition('hide <=> reveal', [
+      transition('hide <=> *', [
         animate('0.5s')
       ])
     ]),
@@ -92,7 +99,7 @@ export class MainComponent implements OnInit {
       lastName: "Claich",
       pseudo: "Rizclech",
       details: "Some guy",
-      imgPath: "",
+      imgPath: "../../assets/Photodidentite.jpg",
       isOpen: false
     },
     {
@@ -124,7 +131,7 @@ export class MainComponent implements OnInit {
     }
   ];
 
-  public getStaffMember = false;
+  public getStaffMember = true;
 
   constructor() { }
 
