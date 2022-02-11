@@ -52,9 +52,9 @@
       (mouseover)="open(member.id)"
       (mouseout)="close(member.id)"
       [ngStyle]="{'margin-left.%': (member.id * 25), 'width.%': 25, 'background-image': 'url(' + member.imgPath + ')'}">
-      <h1>{{member.firstName}} {{member.lastName}}</h1>
-      <h3 *ngIf="member.pseudo">{{member.pseudo}}</h3>
-      <p>{{member.details}}</p>
+      <h1 class="name-member">{{member.firstName}} {{member.lastName}}</h1>
+      <i *ngIf="member.pseudo" class="pseudo-member">{{member.pseudo}}</i>
+      <p class="details-member">{{member.details}}</p>
     </nz-card>
   </div>
 

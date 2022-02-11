@@ -28,8 +28,7 @@ class Staff {
   animations: [
     trigger('openCloseCard', [
       state('open', style({
-        opacity: 1,
-        backgroundColor: 'yellow'
+        opacity: 1
       })),
       state('closed', style({
         opacity: 0.5,
@@ -72,7 +71,11 @@ class Staff {
       state('hide', style({
         marginTop: "auto",
         marginBottom: "auto",
-        color: "#ffed00"
+        opacity: 0
+      })),
+      state('reveal', style({
+        marginTop: "10%",
+        opacity: 1
       })),
       transition('hide <=> *', [
         animate('0.5s')
@@ -83,7 +86,11 @@ class Staff {
         marginTop: "12%",
         opacity: 0.5
       })),
-      transition('hide <=> *', [
+      state('reveal', style({
+        marginTop: "28%",
+        opacity: 1
+      })),
+      transition('hide <=> reveal', [
         animate('0.5s')
       ])
     ]),
@@ -97,7 +104,7 @@ export class MainComponent implements OnInit {
       id: 0,
       firstName: "Alexis",
       lastName: "Claich",
-      pseudo: "Rizclech",
+      pseudo: "@Rizclech",
       details: "Some guy",
       imgPath: "../../assets/Photodidentite.jpg",
       isOpen: false
@@ -115,7 +122,7 @@ export class MainComponent implements OnInit {
       id: 2,
       firstName: "Florien",
       lastName: "Pannier",
-      pseudo: "Fioricco",
+      pseudo: "@Fioricco",
       details: "Some guy",
       imgPath: "",
       isOpen: false
@@ -123,7 +130,7 @@ export class MainComponent implements OnInit {
     {
       id: 3,
       firstName: "Thibault",
-      lastName: "",
+      lastName: "D'Artigues",
       pseudo: "",
       details: "Some guy",
       imgPath: "",
@@ -131,7 +138,7 @@ export class MainComponent implements OnInit {
     }
   ];
 
-  public getStaffMember = true;
+  public getStaffMember = false;
 
   constructor() { }
 

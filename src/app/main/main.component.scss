@@ -34,11 +34,22 @@ div#main-content{
 .card-member {
   position: absolute;
   height: 35%;
-  // background-image: url('../../assets/Photo\ d\'identité.jpg');
+}
+
+.ant-card-bordered{
+  border: none;
 }
 
 .button-media{
   margin-top: 28%;
   background-color: $yellow;
   border-color: black;
+}
+
+h1.name-member{
+  text-align: center;
+}
+
+i.pseudo-member {
+  text-align: center;
 }
