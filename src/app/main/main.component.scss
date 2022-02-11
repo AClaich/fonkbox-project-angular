@@ -34,6 +34,8 @@ div#main-content{
 .card-member {
   position: absolute;
   height: 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ant-card-bordered{
@@ -48,8 +50,16 @@ div#main-content{
 
 h1.name-member{
   text-align: center;
+  color: #f1f1f1
 }
 
 i.pseudo-member {
   text-align: center;
+  color: #f1f1f1
+}
+
+p.details-member{
+  color: #f1f1f1;
+  text-align: justify;
+  margin-top: 50%;
 }

@@ -32,7 +32,7 @@ class Staff {
       })),
       state('closed', style({
         opacity: 0.5,
-        backgroundColor: 'grey'
+        filter: 'grayscale(1)'
       })),
       transition('open <=> closed', [
         animate('0.5s')
@@ -106,7 +106,7 @@ export class MainComponent implements OnInit {
       lastName: "Claich",
       pseudo: "@Rizclech",
       details: "Some guy",
-      imgPath: "../../assets/Photodidentite.jpg",
+      imgPath: "../../assets/41129078_10215634507487708_1772348224976191488_n.jpg",
       isOpen: false
     },
     {
@@ -115,7 +115,7 @@ export class MainComponent implements OnInit {
       lastName: "Gallerand",
       pseudo: "",
       details: "Some guy",
-      imgPath: "",
+      imgPath: "../../assets/273704853_5723631447663622_3555411285090163828_n.jpg",
       isOpen: false
     },
     {
@@ -124,7 +124,7 @@ export class MainComponent implements OnInit {
       lastName: "Pannier",
       pseudo: "@Fioricco",
       details: "Some guy",
-      imgPath: "",
+      imgPath: "../../assets/273568167_420052686540867_8533540451650689950_n.jpg",
       isOpen: false
     },
     {
