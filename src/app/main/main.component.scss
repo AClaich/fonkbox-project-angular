@@ -5,11 +5,6 @@ $yellow: #ffed00;
   max-width: 100%
 }
 
-h1{
-  margin-top: 10%;
-
-}
-
 #logo-img{
   width: 95.6%;
 }
@@ -27,8 +22,12 @@ div#main-content{
 #main-card {
   border: none;
   background-color: $yellow;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+div.info-content{
+  padding-top: 2%;
 }
 
 .card-member {
@@ -43,8 +42,11 @@ div#main-content{
   border: none;
 }
 
+#media-bouton-container{
+  padding-right: 5%;
+}
+
 .button-media{
-  margin-top: 28%;
   background-color: $yellow;
   border-color: black;
 }

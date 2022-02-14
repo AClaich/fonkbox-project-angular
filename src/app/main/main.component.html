@@ -5,7 +5,7 @@
     (mouseover)="growContent()"
     (mouseout)="reduceContent()">
       <div nz-row>
-        <div nz-col nzSpan="8" id="title-container">
+        <div nz-col nzSpan="8" id="title-container" class="info-content">
           <h1 [@hideTitle]="getStaffMember ? 'hide' : 'reveal'">BIENVENUE</h1>
           <p id="text-title" [@hideTextTitle]="getStaffMember ? 'hide' : 'reveal'">Dans Fonkbox on va te parler de funk mais surtout de musique.
             Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
@@ -18,26 +18,49 @@
           <img id="logo-img" src="../assets/FONKBOXLOGO.png"
           [@getMainContent]="getStaffMember ? 'closed' : 'open'">
         </div>
-        <div nz-col nzSpan="8" id="media-bouton-container" >
-          <a
-           nz-button [nzSize]="'large'" nzType="default" nzShape="round"
-           class="button-media"
-           href="https://www.twitter.com/fonkbox"
-           target="blank"
-           [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
-            <i nz-icon nzType="twitter" nzTheme="outline"></i>
-            <span>Twitter</span>
-          </a>
-          <br />
-          <a
-           nz-button [nzSize]="'large'" nzType="default" nzShape="round"
-           class="button-media"
-           href="https://www.instagram.com/fonkbox"
-           target="blank"
-           [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
-            <i nz-icon nzType="instagram" nzTheme="outline"></i>
-            <span>Instagram</span>
-          </a>
+        <div nz-col nzSpan="8" id="media-bouton-container" class="info-content">
+          <div class="button-group" id="group-media-button">
+            <h2 class="title-button-group">Nous suivre :</h2>
+            <a
+            nz-button [nzSize]="'large'" nzType="default" nzShape="round"
+            class="button-media"
+            href="https://www.twitter.com/fonkbox"
+            target="blank"
+            [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
+             <i nz-icon nzType="twitter" nzTheme="outline"></i>
+             <span>Twitter</span>
+           </a>
+           <a
+            nz-button [nzSize]="'large'" nzType="default" nzShape="round"
+            class="button-media"
+            href="https://www.instagram.com/fonkbox"
+            target="blank"
+            [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
+             <i nz-icon nzType="instagram" nzTheme="outline"></i>
+             <span>Instagram</span>
+           </a>
+          </div>
+          <div class="button-group" id="group-podcast-button">
+            <h2 class="title-button-group">Nous écouter :</h2>
+            <a
+            nz-button [nzSize]="'large'" nzType="default" nzShape="round"
+            class="button-media"
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubGVzb251bmlxdWUuY29tL3BvZGNhc3QvMTgzNzY5L3Jzcy54bWw"
+            target="blank"
+            [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
+             <i nz-icon nzType="google" nzTheme="outline"></i>
+             <span>podcast</span>
+           </a>
+           <a
+            nz-button [nzSize]="'large'" nzType="default" nzShape="round"
+            class="button-media"
+            href="https://lesonunique.com/node/183769"
+            target="blank"
+            [@hideButtonMedia]="getStaffMember ? 'hide' : 'reveal'">
+             <i nz-icon nzType="audio" nzTheme="outline"></i>
+             <span>lesonunique</span>
+           </a>
+          </div>
         </div>
       </div>
     </nz-card>

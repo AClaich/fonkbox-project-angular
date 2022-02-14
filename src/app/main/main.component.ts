@@ -28,7 +28,8 @@ class Staff {
   animations: [
     trigger('openCloseCard', [
       state('open', style({
-        opacity: 1
+        opacity: 1,
+        filter: 'drop-shadow(2px 4px 6px black)'
       })),
       state('closed', style({
         opacity: 0.5,
@@ -47,7 +48,7 @@ class Staff {
         width: '51%'
       })),
       transition('open <=> closed', [
-        animate('0.5s')
+        animate('0.3s')
       ])
     ]),
     trigger('getCarousel', [
@@ -55,7 +56,7 @@ class Staff {
         height: '63%'
       })),
       transition('open <=> *', [
-        animate('0.5s')
+        animate('0.3s')
       ])
     ]),
     trigger('hideTitle', [
@@ -64,7 +65,7 @@ class Staff {
         marginTop: '20%'
       })),
       transition('hide <=> *', [
-        animate('0.5s')
+        animate('0.3s')
       ])
     ]),
     trigger('hideTextTitle', [
@@ -78,20 +79,20 @@ class Staff {
         opacity: 1
       })),
       transition('hide <=> *', [
-        animate('0.5s')
+        animate('0.3s')
       ])
     ]),
     trigger('hideButtonMedia', [
       state('hide', style({
-        marginTop: "12%",
+        marginTop: '1%',
         opacity: 0.5
       })),
       state('reveal', style({
-        marginTop: "28%",
+        marginTop: '5%',
         opacity: 1
       })),
       transition('hide <=> reveal', [
-        animate('0.5s')
+        animate('0.3s')
       ])
     ]),
   ]
@@ -120,7 +121,7 @@ export class MainComponent implements OnInit {
     },
     {
       id: 2,
-      firstName: "Florien",
+      firstName: "Florian",
       lastName: "Pannier",
       pseudo: "@Fioricco",
       details: "Some guy",
