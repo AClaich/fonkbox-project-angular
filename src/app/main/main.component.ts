@@ -128,7 +128,7 @@ export class MainComponent implements OnInit {
       lastName: "Claich",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
-      imgPath: "../../assets/41129078_10215634507487708_1772348224976191488_n.jpg",
+      imgPath: "../../assets/alexis.jpg",
       isOpen: false
     },
     {
@@ -137,7 +137,7 @@ export class MainComponent implements OnInit {
       lastName: "Gallerand",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
-      imgPath: "../../assets/273704853_5723631447663622_3555411285090163828_n.jpg",
+      imgPath: "../../assets/christophe.jpg",
       isOpen: false
     },
     {
@@ -155,7 +155,7 @@ export class MainComponent implements OnInit {
       lastName: "D'Artigues",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
-      imgPath: "../../assets/273264071_464028345221032_8757940528479569346_n.jpg",
+      imgPath: "../../assets/thibault2.jpg",
       isOpen: false
     }
   ];
