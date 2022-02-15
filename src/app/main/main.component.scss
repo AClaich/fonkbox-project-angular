@@ -49,6 +49,7 @@ div.info-content{
 .button-media{
   background-color: $yellow;
   border-color: black;
+  margin-bottom: 5%;
 }
 
 h1.name-member{
@@ -66,4 +67,13 @@ p.pseudo-member {
 p.details-member{
   color: #f1f1f1;
   text-align: justify;
+  margin-top: 70%;
+}
+
+.left-button{
+  margin-right: 2%;
+}
+
+.right-button{
+  margin-left: 2%;
 }
