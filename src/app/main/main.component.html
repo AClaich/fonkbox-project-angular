@@ -6,7 +6,7 @@
     (mouseout)="reduceContent()">
       <div nz-row>
         <div nz-col nzSpan="8" id="title-container" class="info-content">
-          <h1 [@hideTitle]="isOverCarousel ? 'hide' : 'reveal'">BIENVENUE</h1>
+          <h1 [@hideTitle]="isOverCarousel ? 'hide' : 'reveal'" id="main-title">BIENVENUE SUR</h1>
           <p id="text-title" [@hideTextTitle]="isOverCarousel ? 'hide' : 'reveal'">Dans Fonkbox on va te parler de funk mais surtout de musique.
             Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
             Chaque semaine aura sa propre particularité. Italo disco, funk africain, calypso....et tant d'autres découvertes.
@@ -41,7 +41,7 @@
            </a>
           </div>
           <div class="button-group" id="group-podcast-button">
-            <h2 class="title-button-group">Nous écouter :</h2>
+            <h2 class="title-button-group">Nous ecouter :</h2>
             <a
             nz-button [nzSize]="'large'" nzType="default" nzShape="round"
             class="button-media left-button"

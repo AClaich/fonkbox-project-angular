@@ -1,4 +1,8 @@
 $yellow: #ffed00;
+@font-face {
+  font-family: "Retronoid";
+  src: url("../../assets/font/retronoid/Retronoid.otf") format("opentype");
+  }
 
 #container {
   max-height: 100%;
@@ -9,6 +13,10 @@ $yellow: #ffed00;
   width: 95.6%;
 }
 
+h1#main-title{
+  font-family: 'Retronoid';
+}
+
 div#main-content{
   text-align: center;
   background-color: $yellow;
@@ -17,6 +25,10 @@ div#main-content{
 #text-title{
   margin-top: 10%;
   text-align: justify;
+}
+
+.title-button-group{
+  font-family: 'Retronoid';
 }
 
 #main-card {
@@ -55,13 +67,13 @@ div.info-content{
 h1.name-member{
   display: inline;
   text-align: center;
-  color: #f1f1f1
+  color: #f1f1f1;
 }
 
 p.pseudo-member {
   display:inline;
   text-align: center;
-  color: #f1f1f1
+  color: #f1f1f1;
 }
 
 p.details-member{
