@@ -39,18 +39,7 @@ import { Staff } from '../main/main.component';
       state('closed', style({
         height: '35%'
       })),
-      transition('closed <=> open', [
-        // query('.details-member', [
-        //   style({color: 'red',opacity: 0.5}),
-        //   stagger(30, [
-        //     animate('300ms',
-        //     style({color: 'black'}))
-        //   ]),
-        //   stagger(50, [
-        //     animate('300ms',
-        //     style({opacity: 1, color: 'purple'}))
-        //   ]),
-        // ]),
+      transition('closed => open', [
         animate('0.3s')
       ]),
       transition('open => closed', [
@@ -106,7 +95,6 @@ export class WebContainerComponent implements OnInit {
     {
       id: 0,
       firstName: "Alexis",
-      lastName: "Claich",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
       imgPath: "../../assets/alexis.jpg",
@@ -115,7 +103,6 @@ export class WebContainerComponent implements OnInit {
     {
       id: 1,
       firstName: "Christophe",
-      lastName: "Gallerand",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
       imgPath: "../../assets/christophe.jpg",
@@ -124,7 +111,6 @@ export class WebContainerComponent implements OnInit {
     {
       id: 2,
       firstName: "Florian",
-      lastName: "Pannier",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
       imgPath: "../../assets/florian.jpg",
@@ -133,7 +119,6 @@ export class WebContainerComponent implements OnInit {
     {
       id: 3,
       firstName: "Thibault",
-      lastName: "D'Artigues",
       pseudo: "",
       details: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33",
       imgPath: "../../assets/thibault.jpg",
