@@ -1,0 +1,15 @@
+$yellow: #ffed00;
+
+div {
+  background-color: $yellow ;
+  height: 100%;
+  img {
+    width: 100%;
+  }
+  h1, h3 {
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 125%;
+  }
+}
