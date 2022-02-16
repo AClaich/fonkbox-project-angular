@@ -1,5 +1,5 @@
 $yellow: #ffed00;
-$text-color-white: #f1f1f1;
+$text-color-white: #dad9d9;
 @font-face {
   font-family: "Retronoid";
   src: url("../../assets/font/retronoid/Retronoid.otf") format("opentype");
@@ -15,7 +15,8 @@ $text-color-white: #f1f1f1;
 }
 
 h1#main-title{
-  font-family: 'Retronoid';
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
 }
 
 div#main-content{
@@ -30,7 +31,8 @@ div#main-content{
 }
 
 .title-button-group{
-  font-family: 'Retronoid';
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 #main-card {
