@@ -146,8 +146,7 @@ export class WebContainerComponent implements OnInit {
     if (this.staffMember.find(member => member.id === id)){
       this.staffMember.filter(member => member.id === id)[0].isOpen = true;
     }
-    console.log('this.staffMember.filter(member => member.id === id)[0].isOpen : ' + this.staffMember.filter(member => member.id === id)[0].isOpen);
-  }
+}
 
   public close(id: number) {
     if (this.staffMember.find(member => member.id === id)){

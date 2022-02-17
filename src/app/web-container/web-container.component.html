@@ -2,8 +2,7 @@
 
   <div id="main-content">
     <nz-card id="main-card"
-    (mouseover)="growContent()"
-    (mouseout)="reduceContent()">
+    (mouseover)="growContent()">
       <div nz-row>
         <div nz-col nzSpan="8" id="title-container" class="info-content">
           <h1 [@hideTitle]="isOverCarousel ? 'hide' : 'reveal'" id="main-title">BIENVENUE SUR</h1>
@@ -15,7 +14,7 @@
             Bisous</p>
         </div>
         <div nz-col nzSpan="8">
-          <img id="logo-img" src="../assets/FONKBOXLOGO.png"
+          <img id="logo-img" src="../assets/FONKBOXLOGO.png" alt="fonkbox"
           [@getMainContent]="isOverCarousel ? 'closed' : 'open'">
         </div>
         <div nz-col nzSpan="8"
@@ -71,7 +70,7 @@
       class="card-member"
       [@openCloseCarousel]="isOverCarousel ? 'open' : 'closed'"
       [@openCloseCard]="member.isOpen ? 'open' : 'closed'"
-      (mouseover)="open(member.id)"
+      (mouseover)="open(member.id); reduceContent()"
       (mouseout)="close(member.id)"
       [ngStyle]="{
         'margin-left.%': 100/(staffMember.length)*(member.id),
