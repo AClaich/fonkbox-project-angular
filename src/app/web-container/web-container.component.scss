@@ -19,7 +19,7 @@ h1#main-title{
   font-weight: bolder;
 }
 
-div#main-content{
+#main-content{
   text-align: center;
   background-color: $yellow;
 }
@@ -69,7 +69,7 @@ div.info-content{
   font-family: 'Raleway', sans-serif;
 }
 
-h1.name-member{
+h2.name-member{
   display: inline;
   text-align: center;
   color: $text-color-white;

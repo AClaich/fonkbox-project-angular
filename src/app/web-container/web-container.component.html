@@ -1,11 +1,11 @@
 <div id="container">
 
-  <div id="main-content">
+  <header id="main-content">
     <nz-card id="main-card"
     (mouseover)="growContent()">
       <div nz-row>
         <div nz-col nzSpan="8" id="title-container" class="info-content">
-          <h1 [@hideTitle]="isOverCarousel ? 'hide' : 'reveal'" id="main-title">BIENVENUE SUR</h1>
+          <h1 [@hideTitle]="isOverCarousel ? 'hide' : 'reveal'" id="main-title">BIENVENUE SUR FONKBOX</h1>
           <p id="text-title" [@hideTextTitle]="isOverCarousel ? 'hide' : 'reveal'">Dans Fonkbox on va te parler de funk mais surtout de musique.
             Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
             Chaque semaine aura sa propre particularité. Italo disco, funk africain, calypso....et tant d'autres découvertes.
@@ -14,7 +14,7 @@
             Bisous</p>
         </div>
         <div nz-col nzSpan="8">
-          <img id="logo-img" src="../assets/FONKBOXLOGO.webp" alt="fonkbox"
+          <img id="logo-img" src="../assets/FONKBOXLOGO.webp" alt="fonkbox logo"
           [@getMainContent]="isOverCarousel ? 'closed' : 'open'">
         </div>
         <div nz-col nzSpan="8"
@@ -62,9 +62,9 @@
         </div>
       </div>
     </nz-card>
-  </div>
+  </header>
 
-  <div nz-row id="carousel-container">
+  <article nz-row id="carousel-container">
     <nz-card *ngFor="let member of staffMember"
       [id]="'member-' + member.id"
       class="card-member"
@@ -77,10 +77,10 @@
         'width.%': 100/staffMember.length,
         'background-image': 'url(' + member.imgPath + ')'
       }">
-      <h1 class="name-member">{{member.firstName}}</h1>
+      <h2 class="name-member">{{member.firstName}}</h2>
       <p class="pseudo-member"><i *ngIf="member.pseudo">{{member.pseudo}}</i></p>
       <!-- <p class="details-member">{{member.details}}</p> -->
     </nz-card>
-  </div>
+  </article>
 
 </div>
