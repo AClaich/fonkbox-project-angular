@@ -90,7 +90,7 @@ import { Staff } from '../main/main.component';
 })
 export class WebContainerComponent implements OnInit {
 
-  public mainImageUrl: string = '../assets/FONKBOXLOGO.png';
+  public mainImageUrl: string = '../assets/FONKBOXLOGO.webp';
   public staffMember: Staff[] = [
     {
       id: 0,
