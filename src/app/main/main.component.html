@@ -1,2 +1,2 @@
-<app-web-container *ngIf="!mobileSupport"></app-web-container>
-<app-mobile-container *ngIf="mobileSupport"></app-mobile-container>
+<app-web-container *ngIf="!mobileSupport" [staffMember]="staffMember"></app-web-container>
+<app-mobile-container *ngIf="mobileSupport" [staffMember]="staffMember"></app-mobile-container>

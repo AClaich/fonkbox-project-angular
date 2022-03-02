@@ -15,6 +15,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { MobileContainerComponent } from './mobile-container/mobile-container.component';
 import { WebContainerComponent } from './web-container/web-container.component';
 
@@ -37,6 +38,7 @@ registerLocaleData(fr);
     NzCardModule,
     NzButtonModule,
     NzIconModule,
+    NzLayoutModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: fr_FR }],
   bootstrap: [AppComponent]

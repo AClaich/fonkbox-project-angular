@@ -1,13 +1,47 @@
-<div [@Opening]="true" class="container">
-  <img id="logo-img" class="logo-img" src="../assets/FONKBOXLOGO.webp">
+<nz-layout>
+  <nz-content class="main">
 
-  <!-- <h1>Vous êtes bien sur le site officiel de Fonkbox</h1>
-  <h3>Le site mobile est en cours de développement (mais ça marche sur un ordinateur)</h3> -->
+    <img id="logo-img" class="logo-img" src="../assets/FONKBOXLOGO.webp" alt="fonkbox logo">
 
-  <p id="text-title" [@Opening]="true">Dans Fonkbox on va te parler de funk mais surtout de musique.
-    Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
-    Chaque semaine aura sa propre particularité. Italo disco, funk africain, calypso....et tant d'autres découvertes.
-    Ne t'inquiètes pas c'est normal...c'est la puissance de la FONK.
-    A très vite sur les ondes
-    Bisous</p>
-</div>
+    <p id="text-title">
+      Dans Fonkbox on va te parler de funk mais surtout de musique.
+      Le principe est simple, on te déniche pendant la semaine des pépites inconnues, et des plus grands classiques du genre pour te les partager tous les vendredis de 21 à 22h sur les ondes de SUN.
+      Chaque semaine aura sa propre particularité. Italo disco, funk africain, calypso....et tant d'autres découvertes.
+      Ne t'inquiètes pas c'est normal...c'est la puissance de la FONK.
+      A très vite sur les ondes
+      Bisous
+    </p>
+
+    <!-- <article>
+      <nz-card>
+
+      </nz-card>
+    </article> -->
+
+  </nz-content>
+
+  <nz-footer>
+    <div nz-row>
+      <div nz-col nzSpan="12" class="button-group" id="group-media-button">
+        <p class="title-button-group">Nous suivre :</p>
+        <a
+          nz-button [nzSize]="'large'" nzType="default" nzShape="circle"
+          class="button-media right-button"
+          href="https://www.instagram.com/fonkbox"
+          target="blank">
+          <i nz-icon nzType="instagram"></i>
+        </a>
+      </div>
+      <div nz-col nzSpan="12" class="button-group" id="group-podcast-button">
+        <p class="title-button-group">Nous écouter :</p>
+        <a
+          nz-button [nzSize]="'large'" nzType="default" nzShape="circle"
+          class="button-media left-button"
+          href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubGVzb251bmlxdWUuY29tL3BvZGNhc3QvMTgzNzY5L3Jzcy54bWw"
+          target="blank">
+          <i nz-icon nzType="google"></i>
+        </a>
+      </div>
+    </div>
+  </nz-footer>
+</nz-layout>
