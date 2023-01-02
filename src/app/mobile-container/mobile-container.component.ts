@@ -1,4 +1,3 @@
-import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { Staff } from '../main/main.component';
 
