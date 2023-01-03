@@ -1,7 +1,7 @@
 header {
   height: 90px;
   background-color: rgb(38, 37, 37);
-  a {
+  a,span {
     color: azure;
   }
   .logo-container{
@@ -14,10 +14,10 @@ header {
 
 main{
   margin-top: 90px;
-  margin-left: 15%;
-  margin-right: 15%;
-  background-color: white;
-  padding: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: azure;
+  padding: 25px 100px;
 }
 
 footer{
