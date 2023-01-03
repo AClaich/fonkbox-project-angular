@@ -1,0 +1,26 @@
+header {
+  height: 90px;
+  background-color: rgb(38, 37, 37);
+  a {
+    color: azure;
+  }
+  .logo-container{
+    img{
+      width: 65px;
+      border-radius: 25%;
+    }
+  }
+}
+
+main{
+  margin-top: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: white;
+  padding: 5%;
+}
+
+footer{
+  background-color: rgb(38, 37, 37);
+  height: 90px;
+}
