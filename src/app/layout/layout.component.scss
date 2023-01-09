@@ -3,6 +3,12 @@ header {
   background-color: rgb(38, 37, 37);
   a,span {
     color: azure;
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+    &.text-center{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .logo-container{
     img{

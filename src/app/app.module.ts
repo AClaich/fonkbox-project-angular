@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MobileContainerComponent } from './mobile-container/mobile-container.component';
 import { WebContainerComponent } from './web-container/web-container.component';
 import { LayoutComponent } from './layout/layout.component';
-import { LastShowComponent } from './last-show/last-show.component';
+import { PresentationComponent } from './presentation/presentation.component';
 import { ShowResumeComponent } from './show-resume/show-resume.component';
 import { TeamComponent } from './team/team.component';
 
@@ -23,7 +23,7 @@ registerLocaleData(fr);
     MobileContainerComponent,
     WebContainerComponent,
     LayoutComponent,
-    LastShowComponent,
+    PresentationComponent,
     ShowResumeComponent,
     TeamComponent
   ],
