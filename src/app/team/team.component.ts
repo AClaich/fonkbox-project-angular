@@ -7,4 +7,37 @@ import { Component } from '@angular/core';
 })
 export class TeamComponent {
 
+  public teamMembers: any = [
+    {
+      id: 0,
+      nom: 'Gallerand',
+      prenom: 'Christophe',
+      img: './../../assets/christophe.webp',
+    },
+    {
+      id: 1,
+      nom: 'D\'Artigues',
+      prenom: 'Thibault',
+      img: './../../assets/thibault.webp',
+    },
+    {
+      id: 2,
+      nom: 'Panier',
+      prenom: 'Florian',
+      img: './../../assets/florian.webp',
+    },
+    {
+      id: 3,
+      nom: 'Claich',
+      prenom: 'Alexis',
+      img: './../../assets/alexis.webp',
+    },
+    {
+      id: 4,
+      nom: 'Romefort',
+      prenom: 'Thomas',
+      img: './../../assets/thomas.webp',
+    }
+  ]
+
 }
