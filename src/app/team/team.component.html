@@ -1,5 +1,5 @@
-<div class="row justify-content-evenly">
-  <div class="card col-2" *ngFor="let member of teamMembers">
-De ce style
+<div class="row justify-content-between">
+  <div class="col-3" *ngFor="let member of teamMembers">
+    <img [src]="member.img" class="rounded float-end img-member" [alt]="member">
   </div>
 </div>
