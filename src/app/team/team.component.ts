@@ -24,7 +24,7 @@ export class TeamComponent {
       id: 2,
       nom: 'Gallerand',
       prenom: 'Christophe',
-      img: './../../assets/christophe.webp',
+      img: './../../assets/gallerand.webp',
     },
     {
       id: 3,
