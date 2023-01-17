@@ -1,34 +1,41 @@
 <header class="fixed-top">
-    <div class="h-100 row justify-content-evenly">
-      <div class="col-3 logo-container d-flex align-items-center">
-        <img
-          id="logo-img"
-          [src]="mainImageUrl"
-          alt="fonkbox logo"
-          class="mx-auto d-block align-middle"
-        />
-      </div>
-      <div class="col-2 d-flex align-items-center">
-        <span role="button" class="text-center align-middle">&#201;mission<hr></span>
-      </div>
-      <div class="col-2 d-flex align-items-center">
-        <span role="button" class="text-center align-middle">À propos<hr></span>
-      </div>
-      <div class="col-2 d-flex align-items-center">
-        <span role="button" class="text-center align-middle">&#201;quipe<hr></span>
-      </div>
-      <div class="col-3 d-flex align-items-center">
-
-      </div>
+  <div class="h-100 row justify-content-evenly">
+    <div class="col-3 logo-container d-flex align-items-center">
+      <img id="logo-img" [src]="mainImageUrl" alt="fonkbox logo" class="mx-auto d-block align-middle" />
     </div>
+    <div class="col-2 d-flex align-items-center">
+      <span role="button" class="text-center align-middle">&#201;mission
+        <hr>
+      </span>
+    </div>
+    <div class="col-2 d-flex align-items-center">
+      <span role="button" class="text-center align-middle">À propos
+        <hr>
+      </span>
+    </div>
+    <div class="col-2 d-flex align-items-center">
+      <span role="button" class="text-center align-middle">&#201;quipe
+        <hr>
+      </span>
+    </div>
+    <div class="col-3 d-flex align-items-center">
+
+    </div>
+  </div>
 </header>
 
 <main>
-  <app-presentation></app-presentation>
+  <div class="main-container">
+    <app-presentation></app-presentation>
+  </div>
   <br>
-  <app-show-resume></app-show-resume>
+  <div class="main-container">
+    <app-show-resume></app-show-resume>
+  </div>
   <br>
-  <app-team></app-team>
+  <div class="main-container">
+    <app-team></app-team>
+  </div>
 </main>
 
 <footer>

@@ -1,15 +1,18 @@
 header {
   height: 90px;
   background-color: rgb(38, 37, 37);
+
   a,
   span {
     color: azure;
     font-size: large;
     font-family: disco_7;
+
     &.text-center {
       margin-left: auto;
       margin-right: auto;
     }
+
     hr {
       margin-top: 0px;
       margin-bottom: 0px;
@@ -24,10 +27,11 @@ header {
       transition: width 0.5s ease;
     }
 
-    &.text-center:hover > hr {
+    &.text-center:hover>hr {
       width: 100%;
     }
   }
+
   .logo-container {
     img {
       width: 65px;
@@ -37,11 +41,19 @@ header {
 }
 
 main {
-  margin-top: 90px;
   margin-left: 10%;
   margin-right: 10%;
   background-color: azure;
-  padding: 25px 100px;
+  padding: 0px 100px;
+
+
+  .main-container {
+    height: 100vh;
+
+    .sub-container {
+      padding-top: 33%;
+    }
+  }
 }
 
 footer {
