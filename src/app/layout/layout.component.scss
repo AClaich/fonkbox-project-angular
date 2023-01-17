@@ -1,24 +1,42 @@
 header {
   height: 90px;
   background-color: rgb(38, 37, 37);
-  a,span {
+  a,
+  span {
     color: azure;
     font-size: large;
     font-family: disco_7;
-    &.text-center{
+    &.text-center {
       margin-left: auto;
       margin-right: auto;
     }
+    hr {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 0%;
+      opacity: 1;
+
+      -webkit-transition: width 0.5s ease;
+      -moz-transition: width 0.5s ease;
+      -o-transition: width 0.5s ease;
+      transition: width 0.5s ease;
+    }
+
+    &.text-center:hover > hr {
+      width: 100%;
+    }
   }
-  .logo-container{
-    img{
+  .logo-container {
+    img {
       width: 65px;
       border-radius: 25%;
     }
   }
 }
 
-main{
+main {
   margin-top: 90px;
   margin-left: 10%;
   margin-right: 10%;
@@ -26,7 +44,7 @@ main{
   padding: 25px 100px;
 }
 
-footer{
+footer {
   background-color: rgb(38, 37, 37);
   height: 90px;
 }
